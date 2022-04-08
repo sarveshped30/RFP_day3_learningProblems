@@ -1,6 +1,7 @@
 package com.bridgeLabz.employeeWage;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Employee {
     public static void main(String[] args) {
@@ -16,10 +17,20 @@ public class Employee {
             System.out.println("Employee is Absent");
         }
 
-        // Printing daily wage.
-        emp.dailyWage();
-        // Printing PartTime wage.
-        emp.partTime();
+        System.out.println("Enter: \n\t1 for daily wage \n\t2 for Part Time Wages ");
+        Scanner sc = new Scanner(System.in);
+        int inp = sc.nextInt();
+
+        switch(inp) {
+            case 1:
+                emp.dailyWage();
+                break;
+            case 2:
+                emp.partTime();
+                break;
+            default:
+                System.out.println("Enter between 1 or 2....");
+        }
 
     }
 
