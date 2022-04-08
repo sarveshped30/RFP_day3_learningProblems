@@ -13,7 +13,7 @@ public class Attendance {
         if (rand_1 == 1) {
             System.out.println("Employee is Present");
         } else {
-            System.out.println("Employee is absent");
+            System.out.println("Employee is Absent");
         }
 
         // Printing daily wage.
